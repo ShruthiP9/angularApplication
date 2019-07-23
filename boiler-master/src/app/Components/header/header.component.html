@@ -1,6 +1,9 @@
-<div class="header text-center">
-    <a href="https://www.w3schools.com" class="top-nav" *ngFor="let links of topNav">
+<div class="col-xs-12 header text-center">
+    <a href="https://www.w3schools.com" class="col-xs-4 top-nav" *ngFor="let links of topNav">
         {{links}}
     </a>
 
 </div>
+<nav>
+    <button target="_blank" routerLink="./home">home</button>
+</nav>

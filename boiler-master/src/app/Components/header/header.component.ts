@@ -1,4 +1,8 @@
+ import { HomeComponent } from './../home/home.component';
+import { Router, RouterModule } from '@angular/router';
+
 import { Component, OnInit } from '@angular/core';
+
 
 
 @Component({
