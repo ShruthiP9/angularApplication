@@ -36,3 +36,7 @@ input.radio {
 .error-message {
     color: red;
 }
+
+.main-content {
+    background-image: "/assets/hospital.png"
+}
