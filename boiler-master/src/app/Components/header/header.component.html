@@ -1,9 +1,17 @@
-<div class="col-xs-12 header text-center">
-    <a href="https://www.w3schools.com" class="col-xs-4 top-nav" *ngFor="let links of topNav">
-        {{links}}
+<div class="col-xs-12" class="header">
+    <a routerLink="./home" class="col-xs-3">
+        {{topNav[0]}}
+    </a>
+    <a routerLink="./about-us" class="col-xs-3">
+        {{topNav[1]}}
+    </a>
+
+    <a routerLink="./home" class="col-xs-3">
+        {{topNav[2]}}
+    </a>
+
+    <a routerLink="./home" class="col-xs-3">
+        {{topNav[3]}}
     </a>
 
 </div>
-<nav>
-    <button target="_blank" routerLink="./home">home</button>
-</nav>

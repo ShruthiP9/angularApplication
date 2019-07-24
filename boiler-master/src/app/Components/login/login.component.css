@@ -1,0 +1,38 @@
+.heading {
+    margin: 10px 0px;
+}
+
+.textBox {
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 15px;
+    width: 50%;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid #00a6ff;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 8px;
+}
+
+input.radio {
+    width: 5% !important;
+    display: inline-block;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 8px;
+}
+
+.login-btn {
+    width: 50%;
+    height: 40px;
+    margin-left: 15px;
+    color: white;
+    background-color: #00a6ff;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.error-message {
+    color: red;
+}
