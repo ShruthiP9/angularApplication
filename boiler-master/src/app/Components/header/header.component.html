@@ -1,4 +1,4 @@
-<div class="col-xs-12" class="header">
+<!-- <div class="col-xs-12" class="header">
     <a routerLink="./home" class="col-xs-3">
         {{topNav[0]}}
     </a>
@@ -15,3 +15,42 @@
     </a>
 
 </div>
+<ul *ngFor="let items of topNav; trackBy:track()">
+    <li> {{items.name}}</li>
+    <button (click)="onChange(items)">update</button>
+    <button (click)="onRemove(items)">Remove</button>
+
+
+</ul>
+<button (click)="onAdd()">ADD</button> -->
+<header>
+    <div class="content" *ngIf="isUserLoggedIn">
+        <div class="sidenav" [ngClass]="{'show-sidebar':showSidebar,'hide-sidebar':!showSidebar}" style="    position: fixed;
+        height: 100vh;
+        overflow: hidden;
+        top: 0;">
+
+            <div class="sidenav-content">
+                <div class="teacher-info">
+                    <h2 [ngClass]="{'hide-sidebar':!showSidebar}">Shruthi</h2>
+                </div>
+                <a (click)="navigateToAboutUs()">hello</a>
+                <a>
+            shruthi
+        </a>
+            </div>
+        </div>
+        <div class="row header">
+            <div class="col-xs-12 header-content">
+                <div class="col-xs-2 col-sm-4">
+                    <button class="sidebar" (click)="showSidebar=true">&#9776;</button>
+                    <!-- <button class="sidebar" (click)="showSidebar=false">&#x276E;</button> -->
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</header>

@@ -15,6 +15,7 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { HelpComponent } from './Components/help/help.component';
 import { LoginComponent } from './Components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -38,6 +39,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    HttpClientModule,
     
    
      RouterModule.forRoot([

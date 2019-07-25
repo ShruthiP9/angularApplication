@@ -1,5 +1,5 @@
-<form [formGroup]="loginForm">
-    <div class="heading col-xs-12 text-center" style="background: url('./assets/hospital.png')">
+<form [formGroup]="loginForm" style="background: url('./assets/hospital.png')">
+    <div class="heading col-xs-12 text-center">
         <div style="color:#00a6ff;font-size:14px;">
             Welcome
         </div>
@@ -29,6 +29,6 @@
 
 
 
-        <button [disabled]="!loginForm.valid" class="login-btn" routerLink="/home">login</button>
+        <button [disabled]="!loginForm" class="login-btn" routerLink="/home">login</button>
     </div>
 </form>

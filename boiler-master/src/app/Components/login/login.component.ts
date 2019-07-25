@@ -1,6 +1,6 @@
 import { LoginService } from './../../services/login.service';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators,FormControl} from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 
 
 @Component({
@@ -9,21 +9,24 @@ import { FormGroup, FormBuilder, Validators,FormControl} from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  constructor(private _login:LoginService,private formBuilder: FormBuilder) { }
-  tabledata=[];
-  public loginForm:FormGroup;
-  
+  constructor(private _login: LoginService, private formBuilder: FormBuilder) { }
+  tabledata = {}
+  public loginForm: FormGroup;
+
   ngOnInit() {
-    this._login.getPosts().subscribe(responseposts=>{this.tabledata=responseposts});
-    this,this.initForms();
+    this._login.getPosts().subscribe(res => { 
+      this.tabledata = res.json(); 
+    });
+    console.log(this.tabledata);
+    this.initForms();
   }
   initForms() {
 
     this.loginForm = this.formBuilder.group({
       'name': [null, Validators.required],
-      
+
       'password': [null, Validators.required],
       'email': [null, Validators.required],
     });
-}
+  }
 }
