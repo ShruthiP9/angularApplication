@@ -32,7 +32,11 @@
 
             <div class="sidenav-content">
                 <div class="teacher-info">
-                    <h2 [ngClass]="{'hide-sidebar':!showSidebar}">Shruthi</h2>
+                    <h2 [ngClass]="{'hide-sidebar':!showSidebar}">Shruthi
+                        <span> <button  style="background-color: #5a6978;border-style:none;" (click)="showSidebar=false">&#x276E;</button></span>
+                    </h2>
+
+
                 </div>
                 <a (click)="navigateToAboutUs()">hello</a>
                 <a>
@@ -40,11 +44,11 @@
         </a>
             </div>
         </div>
-        <div class="row header">
+        <div class="header">
             <div class="col-xs-12 header-content">
                 <div class="col-xs-2 col-sm-4">
                     <button class="sidebar" (click)="showSidebar=true">&#9776;</button>
-                    <!-- <button class="sidebar" (click)="showSidebar=false">&#x276E;</button> -->
+
                 </div>
 
 
